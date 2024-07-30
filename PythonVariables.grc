@@ -1,0 +1,124 @@
+options:
+  parameters:
+    author: jackh
+    catch_exceptions: 'True'
+    category: '[GRC Hier Blocks]'
+    cmake_opt: ''
+    comment: ''
+    copyright: ''
+    description: ''
+    gen_cmake: 'On'
+    gen_linking: dynamic
+    generate_options: qt_gui
+    hier_block_src_path: '.:'
+    id: PythonVariables
+    max_nouts: '0'
+    output_language: python
+    placement: (0,0)
+    qt_qss_theme: ''
+    realtime_scheduling: ''
+    run: 'True'
+    run_command: '{python} -u {filename}'
+    run_options: prompt
+    sizing_mode: fixed
+    thread_safe_setters: ''
+    title: PythonVariables
+    window_size: (1000,1000)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [8, 8]
+    rotation: 0
+    state: enabled
+
+blocks:
+- name: floatNumber
+  id: variable
+  parameters:
+    comment: ''
+    value: '0.25'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [392, 40.0]
+    rotation: 0
+    state: enabled
+- name: floatToInt
+  id: variable
+  parameters:
+    comment: ''
+    value: int(3.14)
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [448, 128.0]
+    rotation: 0
+    state: enabled
+- name: listComprehensionExample
+  id: variable
+  parameters:
+    comment: ''
+    value: '[(i+1)*2 for i in listVariable]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [104, 272.0]
+    rotation: 0
+    state: enabled
+- name: listVariable
+  id: variable
+  parameters:
+    comment: ''
+    value: '[0,1,2,3]'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [416, 264.0]
+    rotation: 0
+    state: enabled
+- name: samp_rate
+  id: variable
+  parameters:
+    comment: ''
+    value: '32000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [184, 12]
+    rotation: 0
+    state: enabled
+- name: stringVariable
+  id: variable
+  parameters:
+    comment: ''
+    value: '''this is a string'''
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [192, 152.0]
+    rotation: 0
+    state: enabled
+- name: tupleVariable
+  id: variable
+  parameters:
+    comment: ''
+    value: (1,2,3,'tuple')
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [672, 256.0]
+    rotation: 0
+    state: enabled
+connections: []
+
+metadata:
+  file_format: 1
+  grc_version: 3.10.9.2
